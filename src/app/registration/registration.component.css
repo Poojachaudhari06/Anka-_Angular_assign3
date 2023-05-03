@@ -1,0 +1,34 @@
+
+.card{
+    margin-top: 15px;
+    border: 1px solid blue;
+    width: 550px;
+    padding: 45px;
+   
+    position: absolute;
+    top:15%;
+    left: 30%;
+   background: #553198;
+  background:linear-gradient(90deg,#1f024a ,rgb(89, 17, 233)100%);
+   
+}
+.card h1,
+h1{
+    color: white;
+}
+label{
+    color: white;
+}
+
+.navbar{
+    background: #553198;
+    background:linear-gradient(90deg,#1f024a ,rgb(89, 17, 233)100%);
+    color: white;
+    height: 9%;
+    width: 100%;
+  }
+
+
+
+
+

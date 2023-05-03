@@ -1,0 +1,94 @@
+<nav class="navbar">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Registration</span>
+    </div>
+  </nav>
+  
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class= "text-center">
+                    <h1>Register</h1>
+                </div>
+                    <form [formGroup]= "registrationForm">
+                      <div class="row">
+                        <div class="col mb-3">
+                          <label for="lastName" class="form-label">First Name</label>
+                          <input  formControlName="firstName" type="name" class="form-control" id="firsttName">
+                          <span class="text-muted" *ngIf= "registrationForm.get('firstName').hasError('required') && registrationForm.get('firstName').touched">First Name is required</span>
+                          <span class="text-muted" *ngIf= "registrationForm.get('firstName')?.hasError('pattern')">First Name should be character</span>
+                        </div>
+                      
+                          
+                          <div class="col mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input  formControlName="lastName" type="name" class="form-control" id="lastName">
+                           <span class="text-muted" *ngIf= "registrationForm.get('lastName').hasError('required') && registrationForm.get('lastName').touched">Last Name is required</span>
+                          <span class="text-muted" *ngIf= "registrationForm.get('lastName')?.hasError('pattern') ">First Name should be character</span>
+                          </div>
+                        </div>
+                        <div class="row">
+
+                          <div class="col mb-3">
+                            <label for="mobile" class="form-label">Mobile Number</label>
+                            <input  formControlName="mobile"type="number" class="form-control" id="mobile">
+                            <span class="text-muted" *ngIf= "registrationForm.get('mobile')?.hasError('required') && registrationForm.get('mobile').touched">Mobile no is required</span>
+
+                          </div>
+                        
+                          
+                        <div class="col mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input formControlName="email"type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <span class="text-muted" *ngIf= "registrationForm.get('email')?.hasError('required') && registrationForm.get('email').touched">Email is required</span>
+                          <span class="text-muted" *ngIf= "registrationForm.get('email')?.hasError('email') && registrationForm.get('email').touched">please enter valid email</span>
+
+                        </div>
+                        </div>
+                      <div class="row">
+                          
+                        <div class="col mb-3">
+                          <label  class="form-label">Password</label>
+                          <input formControlName="password" type="password" class="form-control">
+                          <span class="text-muted" *ngIf= "registrationForm.get('password')?.hasError('required') && registrationForm.get('password').touched">Password is required</span>
+
+                        </div>
+
+                        <div class="col mb-3">
+                          <label  class="form-label"> Confirm Password</label>
+                          <input formControlName="confirmpassword" type="password" class="form-control" >
+                          <mat-error *ngIf="registrationForm.get('confirmpassword')?.hasError('required') && registrationForm.get('confirmpassword').touched">Password is required</mat-error>
+                          <!-- <div *ngIf="registrationForm.get('confirmPassword').errors.confirmPasswordValidator">Passsword and
+                            Confirm Password didn't match. </div> -->
+                         <mat-error *ngIf="registrationForm.controls['confirmpassword'].hasError('passwordMismatch') && registrationForm.get('confirmpassword').touched">Passwords do not match</mat-error>
+                         
+                      </div> 
+                      </div>
+                      <div class="row">   
+                        <div class="col-6 mb-3"  >
+                          <label>Select role</label>
+                          <select class="form-select" formControlName="select" aria-label="Default select example">
+                            <option value="1">Admin</option>
+                            <option value="2">User</option>
+                        </select>
+                        <span class="text-muted" *ngIf= "registrationForm.get('select')?.hasError('required') && registrationForm.get('select').touched">selection is  required</span>
+
+                        </div>
+
+                      </div>
+                      <button  type="submit" mat-raised-button color="warn"(click)= "Register()" [disabled]="registrationForm.invalid" >Submit</button>
+                        <!-- <a  mat-raised-button color="warn" routerLinkActive="active" >Submit</a> -->
+                        <br/>
+                        <br/>
+                        <a style="color: white;" routerLink="/login"> Already have an Account? Login</a>
+
+                </form>     
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
+
+

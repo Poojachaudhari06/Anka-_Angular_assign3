@@ -1,0 +1,133 @@
+{
+  "posts": [
+    {
+      "firstName": "The V",
+      "lastName": "Teayong",
+      "gender": "male",
+      "dob": "1995-06-20",
+      "select_role": "Tester",
+      "id": 2
+    },
+    {
+      "firstName": "Mangal",
+      "lastName": "Mission",
+      "gender": "female",
+      "dob": "2001-03-20",
+      "select_role": "Manager",
+      "id": 3
+    },
+    {
+      "firstName": "wmert",
+      "lastName": "jmmosi",
+      "mobile": 8623982858,
+      "email": "poojavchaudhari06@gmail.com",
+      "select": "1",
+      "password": "234567",
+      "confirmpassword": "2345678",
+      "id": 4
+    }
+  ],
+  "reg": [
+    {},
+    {
+      "firstName": "sdfgh",
+      "lastName": "wedfg",
+      "mobile": 8623982858,
+      "email": "poojavchaudhari06@gmail.com",
+      "select": "1",
+      "password": "345678",
+      "confirmpassword": "34567",
+      "id": 1
+    },
+    {
+      "firstName": "jjmkj",
+      "lastName": "jmmosi",
+      "mobile": 8623982858,
+      "email": "poojavchaudhari06@gmail.com",
+      "select": "1",
+      "password": "wsedf",
+      "confirmpassword": "asdfvs",
+      "id": 0.48305651364388247
+    },
+    {
+      "firstName": "sdfgh",
+      "lastName": "wedfg",
+      "mobile": 8623982858,
+      "email": "poojavchaudhari06@gmail.com",
+      "select": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 0.5275871507962273
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "mobile": "",
+      "email": "",
+      "select": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 0.04096682182338984
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "mobile": "",
+      "email": "",
+      "select": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 0.453261758191023
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "mobile": "",
+      "email": "",
+      "select": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 0.24287134662267107
+    },
+    {
+      "firstName": "wmert",
+      "lastName": "jmmosi",
+      "mobile": 8623982858,
+      "email": "poojavchaudhari06@gmail.com",
+      "select": "1",
+      "password": "mqlwml",
+      "confirmpassword": "mlwmke;",
+      "id": 0.48330961166425457
+    },
+    {
+      "firstName": "meghna",
+      "lastName": "bansod",
+      "mobile": 8623982858,
+      "email": "2019bit067@sggs.ac.in",
+      "select": "1",
+      "password": "12345",
+      "confirmpassword": "12345",
+      "id": 0.6626337769794104
+    },
+    {
+      "firstName": "narmada",
+      "lastName": "ugale",
+      "mobile": 7028679884,
+      "email": "2019bse083@sggs.ac.in",
+      "select": "2",
+      "password": "654321",
+      "confirmpassword": "654321",
+      "id": 0.1538941443370172
+    },
+    {
+      "firstName": "mangal",
+      "lastName": "nerlewad",
+      "mobile": 70286798884,
+      "email": "2019bit067@sggs.ac.in",
+      "select": "1",
+      "password": "1236",
+      "confirmpassword": "1236",
+      "id": 0.4474304785397709
+    }
+  ]
+}

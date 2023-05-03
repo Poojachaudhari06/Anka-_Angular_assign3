@@ -1,0 +1,36 @@
+<mat-toolbar class="nv">
+  <span>My App</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+          <div class="card">
+              <div class="text-center">
+                <h1  style="font-size:45px;">Login</h1>
+              </div>
+                  <form [formGroup]= "loginform" (ngSubmit)="login()">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <span class="text-muted" *ngIf="loginform.get('email')?.hasError('required') && loginform.get('email').touched">Email is required</span>
+                        <span class="text-muted" *ngIf="loginform.get('email')?.hasError('email') && loginform.get('email').touched">please enter valid email</span>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input formControlName="password" type="password" class="form-control" id ="exampleInputPassword1">
+                        <span class="text-muted" *ngIf="loginform.get('password')?.hasError('required') && loginform.get('password').touched">Password is required</span>
+                      </div>
+                      <button  type="submit" mat-raised-button color="warn">Login</button>
+                      <br/>
+                      <br/>
+                      <a style="color: white;" routerLink="/registration"> New user?Registration</a>
+                   
+               </form>     
+          </div>
+      </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
